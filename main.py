@@ -5,6 +5,10 @@ from modules.pose_estimation import detect_pose
 from modules.lane_detection import detect_lanes
 import time
 
+from modules.camera_module import Camera
+cam = Camera()
+frame = cam.get_frame()
+
 def main():
     cap = cv2.VideoCapture(0)  # Mở webcam
 
